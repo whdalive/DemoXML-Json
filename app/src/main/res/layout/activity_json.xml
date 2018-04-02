@@ -2,5 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <Button
+        android:id="@+id/json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="org.json"
+        android:layout_gravity="center"/>
 
+    <Button
+        android:id="@+id/Gson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gson"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/Jackson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jackson"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/FastJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FastJSON"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/json_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

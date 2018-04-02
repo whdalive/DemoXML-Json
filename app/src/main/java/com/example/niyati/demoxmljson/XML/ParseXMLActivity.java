@@ -81,7 +81,7 @@ public class ParseXMLActivity extends AppCompatActivity {
             id = new StringBuilder();
             name = new StringBuilder();
             version = new StringBuilder();
-            text = new StringBuilder();
+            text = new StringBuilder("This is parsed by SAX" + "\n");
         }
 
         //在解析某个节点的时候调用
@@ -151,7 +151,7 @@ public class ParseXMLActivity extends AppCompatActivity {
         }*/
 
 
-        StringBuilder builder = new StringBuilder("");
+        StringBuilder builder = new StringBuilder("This is parsed by PULL" + "\n");
         XmlPullParser parser = Xml.newPullParser();
 
         try {
@@ -186,7 +186,7 @@ public class ParseXMLActivity extends AppCompatActivity {
     }
 
     private void xml_dom(){
-        StringBuilder data = new StringBuilder();
+        StringBuilder data = new StringBuilder("This is parsed by DOM" + "\n");
         try {
             //打开assets文件夹下的xml示例文件到输入流
             InputStream in = getAssets().open("example.xml");
